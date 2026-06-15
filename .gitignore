@@ -1,0 +1,15 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Hydra runtime data (intermediate + output)
+backend/.hydra_data/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
