@@ -1,0 +1,30 @@
+the quick brown fox jumps over the lazy dog
+a distributed system is a collection of independent computers
+that appears to its users as a single coherent system
+mapreduce is a programming model for processing large data sets
+the master node assigns map tasks to worker nodes in the cluster
+each worker reads its chunk and emits intermediate key value pairs
+the shuffle phase groups intermediate values by their key
+reducers fetch their partitions from every map worker on disk
+fault tolerance comes from heartbeats and automatic task reassignment
+when a worker dies the master detects the missing heartbeat
+the master then re queues the failed tasks on a healthy worker
+this keeps the job making progress even when machines fail
+partitioning uses a deterministic hash so every reducer gets the right keys
+the quick brown fox is fast and the lazy dog is slow
+parallel processing lets many workers run at the same time
+the system scales by adding more worker nodes to the cluster
+data locality means moving computation close to the data
+the word count job is the classic hello world of mapreduce
+counting words shows map shuffle and reduce working together
+a good distributed system hides failures from its users
+heartbeats prove a worker is still alive and healthy
+timeouts let the master notice when a worker has gone silent
+retries with attempt numbers stop stale results from corrupting output
+the final output is written to disk after every reducer finishes
+a clean dashboard makes the cluster state easy to understand
+map tasks run first then the shuffle then the reduce phase
+the brown fox and the lazy dog appear again for good measure
+distributed coordination is hard but the core ideas are simple
+split the work assign the work track the work recover the work
+that is the whole story of a mini mapreduce engine
