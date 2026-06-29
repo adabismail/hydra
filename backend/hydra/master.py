@@ -596,6 +596,12 @@ def api_logs(after: int = 0):
     return {"events": cluster.log.after(after)}
 
 
+@app.post("/api/logs/clear")
+def api_logs_clear():
+    cluster.log.clear()
+    return {"ok": True}
+
+
 @app.get("/api/datasets")
 def api_datasets():
     try:
